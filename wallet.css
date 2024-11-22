@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Wallet Container */
+.wallet-container {
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Balance Section */
+.balance-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.balance-section h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #333;
+}
+
+.balance-section .balance {
+  background-color: rgba(89, 156, 0, 0.468);
+  font-size: 2.5rem;
+  font-weight: 800; 
+  text-decoration: underline;
+  color: #ffd500;
+  margin: 10px 0;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.action-buttons button {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action-buttons .receive-btn {
+  background-color: #17a2b8;
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 5px;
+}
+
+.action-buttons .receive-btn:hover {
+  background-color: #117a8b;
+}
+
+/* Top-Up Section */
+.topup-section {
+  margin-top: 20px;
+}
+
+.topup-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.topup-btn {
+  flex: 1 1 calc(33% - 10px); /* 3 buttons per row with gap */
+  height: 80px;
+  padding: 10px;
+  font-size: 24px;
+  border: 1px solid #797979;
+  color: #dca500;
+  font-weight: 800;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #343434;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.topup-btn:hover {
+  background-color: #dca500;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Transactions Section */
+.transactions-section {
+  margin-top: 20px;
+}
+
+.transactions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transactions-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 1rem;
+}
+
+.transactions-list .amount {
+  font-weight: bold;
+}
+
+.transactions-list .amount.negative {
+  color: #dc3545;
+}
+
+.transactions-list .amount.positive {
+  color: #00ee37;
+}
+
+#main-page {
+  background-color: rgba(135, 135, 135, 0.384);
+  width: 200px;
+}
+
+#main-page {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 900px;
+  height: 600px;
+  color: aliceblue;
+  border: 5px solid #7e7e7e80;
+  border-radius: 10px;
+}
+
+#main-page img {
+  max-width: 1190px;
+  border-radius: 10px;
+  opacity: 80%;
+}
+
+#main-page h1 {
+  position: absolute; /* Positions the H1 relative to the container */
+  font-weight: 800;
+  top: 50%; /* Move to 50% from the top */
+  left: 50%; /* Move to 50% from the left */
+  letter-spacing: 2px;
+  font-family: "Poppins", Arial, sans-serif
+  ;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Center align both horizontally and vertically */
+  color: white; /* Text color */
+  font-size: 3rem; /* Adjust size as needed */
+}

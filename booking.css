@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+.form-container {
+  background: rgba(255, 255, 255, 0.599);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  max-width: 900px;
+  max-height: 1200px;
+}
+
+.form-container h2 {
+  color: #333;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: #1b1b1b;
+}
+
+.form-group select,
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group select {
+  cursor: pointer;
+}
+
+.total-biaya {
+  background-color: rgba(250, 235, 215, 0.442);
+  height: 80px;
+  width: 600px;
+}
+
+.total-biaya > label {
+  position: relative;
+  left: 2%;
+  top: 25%;
+  font-size: 24px;
+}
+
+.total-biaya > h2 {
+  position: relative;
+  left: 20%;
+  bottom: 40%;
+  color: #c99d00;
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.form-submit {
+  display: flex;
+  justify-content: right;
+  margin-top: 20px;
+}
+
+.promo-code {
+  width: 60%;
+}
+
+#promo-duration {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#qty {
+  width: 30%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-submit button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6fb4ff;
+  color: rgb(47, 47, 47);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-submit button:hover {
+  background-color: #324f6e;
+  color: white;
+}

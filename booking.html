@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="booking.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="nav">
+        <div class="nav-logo">
+          <p>WARNET - ONLINE</p>
+        </div>
+        <div class="nav-menu" id="navMenu">
+          <ul>
+            <li><a href="index.html" class="link active">Home</a></li>
+            <li><a href="services.html" class="link">Services</a></li>
+            <li><a href="about.html" class="link">About</a></li>
+          </ul>
+        </div>
+        <div class="nav-button">
+          <button class="btn white-btn" id="loginBtn" onclick="joinhtml">
+            <a href="join.html">Log In</a>
+          </button>
+          <button class="btn white-btn" id="registerBtn" onclick="register()">
+            Sign Up
+          </button>
+        </div>
+        <div class="nav-menu-btn">
+          <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+      <div class="form-container">
+        <h2>CHOOSE YOUR DESIRED SPECS</h2>
+        <form id="userForm">
+          <div class="form-group">
+            <label for="options">CPU:</label>
+            <select id="options" name="options" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+              <option value="option4">Option 4</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="options">GPU:</label>
+            <select id="options" name="options" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+              <option value="option4">Option 4</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="options">RAM:</label>
+            <select id="options" name="options" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+              <option value="option4">Option 4</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="options">Storage: </label>
+            <select id="options" name="options" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+              <option value="option4">Option 4</option>
+            </select>
+          </div>
+
+          <div id="promo-duration">
+            <div class="form-group promo-code">
+              <label for="">Promo Code:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div class="form-group promo-code">
+            <div>
+              <label for="options">Promo Code:</label>
+              <br>
+              <input
+                type="number"
+                id="qty"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+              <select id="options" name="options" required>
+                <option value="" disabled selected>Select unit</option>
+                <option value="hour">Hours</option>
+                <option value="day">Days</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="total-biaya">
+            <label for="name">Total Biaya:</label>
+            <h2>14,000</h2>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit">Next</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="scripts/script.js"></script>
+  </body>
+</html>

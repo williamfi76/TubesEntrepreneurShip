@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+#main-page {
+  background-color: rgba(135, 135, 135, 0.384);
+  width: 200px;
+}
+
+#main-page {
+  margin-top: 100px;
+  width: 100%;
+  max-width: 1200px;
+  height: 804px;
+  color: aliceblue;
+  border: 5px solid #7e7e7e80;
+  border-radius: 10px;
+}
+
+#main-page img {
+  max-width: 1190px;
+  border-radius: 10px;
+  opacity: 80%;
+}
+
+#main-page h1 {
+  position: absolute; /* Positions the H1 relative to the container */
+  top: 50%; /* Move to 50% from the top */
+  left: 50%; /* Move to 50% from the left */
+  letter-spacing: 2px;
+  font-family: "Poppins", Arial, sans-serif
+  ;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Center align both horizontally and vertically */
+  color: white; /* Text color */
+  font-size: 3rem; /* Adjust size as needed */
+}

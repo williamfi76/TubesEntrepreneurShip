@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="checkout.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="nav">
+        <div class="nav-logo">
+          <p>WARNET - ONLINE</p>
+        </div>
+        <div class="nav-menu" id="navMenu">
+          <ul>
+            <li><a href="index.html" class="link active">Home</a></li>
+            <li><a href="services.html" class="link">Services</a></li>
+            <li><a href="about.html" class="link">About</a></li>
+          </ul>
+        </div>
+        <div class="nav-button">
+          <button class="btn white-btn" id="loginBtn" onclick="joinhtml">
+            <a href="join.html">Log In</a>
+          </button>
+          <button class="btn white-btn" id="registerBtn" onclick="register()">
+            Sign Up
+          </button>
+        </div>
+        <div class="nav-menu-btn">
+          <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+      <div id="main-page">
+        <div class="line-items">
+          <h4 class="item-left">CPU</h4>
+          <h4 class="item-right">AMD Ryzen 7 9800x</h4>
+        </div>
+        <div class="line-items">
+          <h4 class="item-left">GPU</h4>
+          <h4 class="item-right">AOF RTX 3080Ti 12GB</h4>
+        </div>
+        <div class="line-items">
+          <h4 class="item-left">RAM</h4>
+          <h4 class="item-right">32 GB</h4>
+        </div>
+        <div class="line-items">
+          <h4 class="item-left">Storage</h4>
+          <h4 class="item-right">128 GB</h4>
+        </div>
+        <hr />
+        <div class="line-items">
+          <h4 class="item-left yellow">Saldo Awal:</h4>
+          <h4 class="item-right yellow">750,000 bits</h4>
+        </div>
+        <div class="line-items">
+          <h4 class="item-left yellow">Total Biaya:</h4>
+          <h4 class="item-right yellow">(120,000) bits</h4>
+        </div>
+        <div class="line-items">
+          <h4 class="item-left yellow">Kode Promo (PromoPelajar25)</h4>
+          <h4 class="item-right yellow">30,000</h4>
+        </div>
+        <center><hr id="saldo-akhir" size="8" /></center>
+        <div class="line-items saldo-akhir">
+          <h4 class="item-left yellow">Saldo Akhir</h4>
+          <h4 class="item-right yellow">660,000 bits</h4>
+        </div>
+
+        <form id="user-form">
+          <div class="line-items">
+            <h4 class="item-left">Preinstalled Software</h4>
+            <div class="checkbox-grid">
+              <label class="checkbox-item">
+                <input type="checkbox" name="options" value="Option 1" />
+                Adobe Photoshop CC
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="options" value="Option 2" />
+                Blender 4.3
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="options" value="Option 3" />
+                Autodesk Maya 2024
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="options" value="Option 4" />
+                Visual Studio Code
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="options" value="Option 5" />
+                Unreal Engine 5
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="options" value="Option 6" />
+                Virtual Box
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="options" value="Option 7" />
+                Adobe Illustrator
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="options" value="Option 8" />
+                Affinity Photo
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="options" value="Option 9" />
+                Davinci Resolve 19
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="options" value="Option 10" />
+                Adobe Premiere Pro CC
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="options" value="Option 11" />
+                Adobe After Effects
+              </label>
+            </div>
+          </div>
+          <div class="upload-container">
+            <h2>Upload Your File</h2>
+            <div class="upload-box" id="uploadBox">
+              <input
+                type="file"
+                id="fileInput"
+                accept="image/*, .pdf, .doc, .docx"
+              />
+              <p>Click or Drag & Drop to Upload</p>
+            </div>
+            <div class="file-preview" id="filePreview"></div>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit">Next</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="scripts/script.js"></script>
+  </body>
+</html>

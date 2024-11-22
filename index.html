@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="nav">
+        <div class="nav-logo">
+          <p>WARNET - ONLINE</p>
+        </div>
+        <div class="nav-menu" id="navMenu">
+          <ul>
+            <li><a href="index.html" class="link active">Home</a></li>
+            <li><a href="services.html" class="link">Services</a></li>
+            <li><a href="about.html" class="link">About</a></li>
+          </ul>
+        </div>
+        <div class="nav-button">
+          <button class="btn white-btn" id="loginBtn" onclick="joinhtml">
+            <a href="join.html">Log In</a>
+          </button>
+          <button class="btn white-btn" id="registerBtn" onclick="register()" >
+            Sign Up
+          </button>
+        </div>
+        <div class="nav-menu-btn">
+          <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+      <div id="main-page">
+        <img src="images/banner/pexels-vlada-karpovich-7903142.jpg" alt="">
+        <h1>POWER FROM ANYWHERE</h1>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="scripts/script.js"></script>
+  </body>
+</html>

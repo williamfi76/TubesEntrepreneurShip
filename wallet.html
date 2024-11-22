@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="wallet.css" />
+    <title>{Username}'s Wallet</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="nav">
+        <div class="nav-logo">
+          <p>WARNET - ONLINE</p>
+        </div>
+        <div class="nav-menu" id="navMenu">
+          <ul>
+            <li><a href="index.html" class="link active">Home</a></li>
+            <li><a href="services.html" class="link">Services</a></li>
+            <li><a href="about.html" class="link">About</a></li>
+          </ul>
+        </div>
+        <div class="nav-button">
+          <button class="btn white-btn" id="loginBtn" onclick="joinhtml">
+            <a href="join.html">Log In</a>
+          </button>
+          <button class="btn white-btn" id="registerBtn" onclick="register()">
+            Sign Up
+          </button>
+        </div>
+        <div class="nav-menu-btn">
+          <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+      <div id="main-page">
+        <div class="wallet-container">
+          <!-- Balance Overview -->
+          <div class="balance-section">
+            <p class="balance">750,000</p>
+            <div class="action-buttons">
+              <button class="receive-btn">TOP UP</button>
+            </div>
+          </div>
+
+          <!-- Top-Up Section -->
+          <div class="topup-section">
+            <div class="topup-options">
+              <button class="topup-btn" onclick="" data-amount="10000">10,000</button>
+              <button class="topup-btn" onclick="" data-amount="20000">20,000</button>
+              <button class="topup-btn" onclick="" data-amount="50000">50,000</button>
+              <button class="topup-btn" onclick="" data-amount="100000">100,000</button>
+              <button class="topup-btn" onclick="" data-amount="250000">$250,000</button>
+              <button class="topup-btn" onclick="" data-amount="500000">$500,000</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="scripts/script.js">
+    </script>
+  </body>
+</html>
